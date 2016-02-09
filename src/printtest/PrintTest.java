@@ -56,7 +56,7 @@ public class PrintTest {
         return 0;
     }
     
-    public static void readCSV() {
+    public static void readCSV(String filename) {
         PrintJob printJob = new PrintJob();
         ArrayList<String> listJobs = new ArrayList<>();
         DecimalFormat df = new DecimalFormat("#.##");
@@ -65,7 +65,7 @@ public class PrintTest {
 		
         try {
             String lineInput;
-            brInputFile = new BufferedReader(new FileReader("printjobs (1).csv"));
+            brInputFile = new BufferedReader(new FileReader(filename));
             double amountPerBlackPage;
             double amountPerColourPage;
 
@@ -117,8 +117,8 @@ public class PrintTest {
     }
     
     public static void main(String[] args) {
-        
-        readCSV();
+        String filename = "printjobs (1).csv";
+        readCSV(filename);
     }
     
 }
