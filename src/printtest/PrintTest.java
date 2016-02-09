@@ -118,7 +118,11 @@ public class PrintTest {
     
     public static void main(String[] args) {
         String filename = "printjobs (1).csv";
-        readCSV(filename);
+        
+        if (args[0] != null)
+            readCSV(args[0]);
+        else
+            readCSV(filename);
     }
     
 }
