@@ -12,4 +12,4 @@ Paper size A4, job type double sided:
 
 To run the program, do the following:
   1. import the project to Netbeans and do a Clean and Build Project
-  2. use the command: java -jar "<complete path>\PrintTest.jar" "full path of the CSV file"
+  2. use the command: java -jar "[complete path]\PrintTest.jar" "[full path of the CSV file]"
